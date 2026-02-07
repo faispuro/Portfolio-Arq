@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nombre Estudio — Arquitectura</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+      <div class="nav-pill">
+        <nav class="nav">
+          <div class="logo">SV</div>
+
+          <ul class="nav-links">
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#estudio">Estudio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+
+          <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero-projects">
+        <img src="assets/images/proyecto-1.jpg" alt="Proyecto destacado" id="heroImage">
+        <div class="hero-home-content">
+          <h1>
+            <span class="first-name">Santino</span>
+            <span class="last-name">Volponi</span>
+          </h1>
+        </div>
+
+    </section>
+
+  <main>
+
+  <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-eyebrow">ESTUDIO DE ARQUITECTURA</span>
+        
+        <h2>
+          Arquitectura contemporánea<br>
+          enfocada en el detalle
+        </h2>
+
+        <p>
+          Diseñamos fachadas y espacios arquitectónicos con una mirada contemporánea,
+          combinando estética, funcionalidad y precisión constructiva en cada proyecto.
+        </p>
+
+        <a href="#contacto" class="hero-btn">Hablame de tu proyecto</a>
+      </div>
+
+      <div class="hero-circle">
+        <img src="assets/images/proyecto-arquitectonico.png" alt="Detalle de fachada">
+      </div>
+    </section>
+
+    <!-- IMAGEN -->
+
+    <section class="before-after">
+      <div class="ba-wrapper">
+        
+        <!-- DESPUÉS -->
+        <img 
+          src="assets/images/proyecto-despues.jpg" 
+          alt="Proyecto después"
+          class="ba-image ba-after"
+        >
+
+        <!-- ANTES -->
+        <div class="ba-before">
+          <img 
+            src="assets/images/proyecto-antes.jpg" 
+            alt="Proyecto antes"
+            class="ba-image"
+          >
+        </div>
+        <span class="ba-label">Antes / Después</span>
+        <!-- SLIDER -->
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          class="ba-slider"
+          aria-label="Comparar antes y después"
+        >
+        <span class="ba-divider"></span>
+      </div>
+    </section>
+
+      <!-- ESTUDIO -->
+  <section class="about-intro">
+    <div class="about-grid">
+
+      <div class="about-image">
+        <img src="assets/images/about-circulo.jpg" alt="Detalle de obra">
+      </div>
+
+      <div class="about-content">
+        <span class="about-eyebrow">Desde 2024</span>
+
+        <h3>Diseñando espacios con identidad</h3>
+
+        <p>
+          Somos un estudio de arquitectura enfocado en el diseño y la ejecución de
+          proyectos residenciales y comerciales, combinando funcionalidad,
+          estética y precisión constructiva en cada etapa.
+        </p>
+
+        <div class="about-metric">
+          <strong>100+</strong>
+          <span>m² construidos</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="projects">
+    <div class="section-header fade-up">
+      <h3>Proyectos</h3>
+    </div>
+
+    <div class="projects-grid fade-up">
+      <article class="project-card">
+        <img src="assets/images/proyecto-1.jpg" alt="Proyecto 1">
+        <span>Vivienda Unifamiliar</span>
+      </article>
+
+      <article class="project-card fade-up">
+        <img src="assets/images/proyecto-2.jpg" alt="Proyecto 2">
+        <span>Edificio Residencial</span>
+      </article>
+
+      <article class="project-card fade-up">
+        <img src="assets/images/proyecto-3.jpg" alt="Proyecto 3">
+        <span>Reforma Interior</span>
+      </article>
+    </div>
+  </section>
+  <section id="contacto" class="contact">
+  <div class="contact-inner">
+
+    <div class="contact-header">
+      <h3>Hablemos de tu proyecto</h3>
+      <p>
+        Completá el formulario y nos pondremos en contacto para
+        conocer tu idea y acompañarte en todo el proceso.
+      </p>
+    </div>
+
+    <form class="contact-form" action="https://formsubmit.co/tucorreo@ejemplo.com" method="POST">
+      
+      <!-- anti spam -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Nuevo contacto desde la web">
+      <input type="hidden" name="_template" value="table">
+
+      <div class="form-group">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+      </div>
+
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email" required>
+      </div>
+
+      <div class="form-group">
+        <input type="tel" name="telefono" placeholder="Teléfono">
+      </div>
+
+      <div class="form-group">
+        <textarea name="mensaje" placeholder="Contanos sobre tu proyecto" rows="4" required></textarea>
+      </div>
+
+      <button type="submit" class="contact-btn">
+        Enviar consulta
+      </button>
+
+    </form>
+
+  </div>
+</section>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <h2>Santino Volponi</h2>
+      <span>Arquitectura</span>
+
+      <div class="footer-social">
+        <a href="#" aria-label="WhatsApp">WhatsApp</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="footer-contact">
+      <h4>Contacto</h4>
+      <p>+54 9 2914 29 6865</p>
+      <p>info@volponi.com</p>
+      <p>Bahia Blanca, Argentina</p>
+    </div>
+
+    <!-- NAV -->
+    <nav class="footer-nav">
+      <h4>Navegación</h4>
+      <a href="#estudio">Estudio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Volponi Arquitectura</p>
+  </div>
+</footer>
+
+
+
+  <script src="js/main.js"></script>
+  <script src="js/before-after.js"></script>
+  <script src="js/footer-reveal.js"></script>
+
+</body>
+</html>
