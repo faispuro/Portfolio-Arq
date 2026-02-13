@@ -2,227 +2,406 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nombre Estudio — Arquitectura</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/servicios.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/before-after.css">
+  <link rel="stylesheet" href="css/testimonios.css">
+  <link rel="stylesheet" href="css/header-nav.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-      <div class="nav-pill">
-        <nav class="nav">
-          <div class="logo">SV</div>
+      <nav class="nav">
 
-          <ul class="nav-links">
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#estudio">Estudio</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-
-          <button class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </nav>
-      </div>
+        <ul class="nav-links">
+          <li><a href="#sobre-mi">Sobre Mí</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
+            <!-- Hamburguesa -->
+        <button class="menu-toggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-    <section class="hero-projects">
-        <img src="assets/images/proyecto-1.jpg" alt="Proyecto destacado" id="heroImage">
-        <div class="hero-home-content">
-          <h1>
-            <span class="first-name">Santino</span>
-            <span class="last-name">Volponi</span>
-          </h1>
-        </div>
 
-    </section>
 
-  <main>
+<section class="hero-projects fade-scroll">
+  <div class="hero-slider">
+    <picture class="slide active">
+      <source srcset="assets/images/proyecto-1-mobile.jpg" media="(max-width: 768px)">
+      <img src="assets/images/proyecto-1.jpg" alt="">
+    </picture>
 
-  <!-- HERO -->
-    <section class="hero">
-      <div class="hero-content">
-        <span class="hero-eyebrow">ESTUDIO DE ARQUITECTURA</span>
-        
-        <h2>
-          Arquitectura contemporánea<br>
-          enfocada en el detalle
-        </h2>
+    <picture class="slide">
+      <source srcset="assets/images/proyecto-2-mobile.jpg" media="(max-width: 768px)">
+      <img src="assets/images/proyecto-2.jpg" alt="">
+    </picture>
 
-        <p>
-          Diseñamos fachadas y espacios arquitectónicos con una mirada contemporánea,
-          combinando estética, funcionalidad y precisión constructiva en cada proyecto.
-        </p>
+    <picture class="slide">
+      <source srcset="assets/images/proyecto-3-mobile.jpg" media="(max-width: 768px)">
+      <img src="assets/images/proyecto-3.jpg" alt="">
+    </picture>
+        <picture class="slide">
+      <source srcset="assets/images/proyecto-4-mobile.jpeg" media="(max-width: 768px)">
+      <img src="assets/images/proyecto-4.jpeg" alt="">
+    </picture>
 
-        <a href="#contacto" class="hero-btn">Hablame de tu proyecto</a>
-      </div>
+    <picture class="slide">
+      <source srcset="assets/images/proyecto-5-mobile.jpeg" media="(max-width: 768px)">
+      <img src="assets/images/proyecto-5.jpeg" alt="">
+    </picture>
 
-      <div class="hero-circle">
-        <img src="assets/images/proyecto-arquitectonico.png" alt="Detalle de fachada">
-      </div>
-    </section>
+    <picture class="slide">
+      <source srcset="assets/images/proyecto-6-mobile.jpeg" media="(max-width: 768px)">
+      <img src="assets/images/proyecto-6.jpeg" alt="">
+    </picture>
+        <picture class="slide">
+      <source srcset="assets/images/proyecto-7-mobile.jpeg" media="(max-width: 768px)">
+      <img src="assets/images/proyecto-7.jpeg" alt="">
+    </picture>
+  </div>
 
-    <!-- IMAGEN -->
-
-    <section class="before-after">
-      <div class="ba-wrapper">
-        
-        <!-- DESPUÉS -->
-        <img 
-          src="assets/images/proyecto-despues.jpg" 
-          alt="Proyecto después"
-          class="ba-image ba-after"
-        >
-
-        <!-- ANTES -->
-        <div class="ba-before">
-          <img 
-            src="assets/images/proyecto-antes.jpg" 
-            alt="Proyecto antes"
-            class="ba-image"
-          >
-        </div>
-        <span class="ba-label">Antes / Después</span>
-        <!-- SLIDER -->
-        <input
-          type="range"
-          min="0"
-          max="100"
-          value="50"
-          class="ba-slider"
-          aria-label="Comparar antes y después"
-        >
-        <span class="ba-divider"></span>
-      </div>
-    </section>
-
-      <!-- ESTUDIO -->
-  <section class="about-intro">
-    <div class="about-grid">
-
-      <div class="about-image">
-        <img src="assets/images/about-circulo.jpg" alt="Detalle de obra">
-      </div>
-
-      <div class="about-content">
-        <span class="about-eyebrow">Desde 2024</span>
-
-        <h3>Diseñando espacios con identidad</h3>
-
-        <p>
-          Somos un estudio de arquitectura enfocado en el diseño y la ejecución de
-          proyectos residenciales y comerciales, combinando funcionalidad,
-          estética y precisión constructiva en cada etapa.
-        </p>
-
-        <div class="about-metric">
-          <strong>100+</strong>
-          <span>m² construidos</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- PROYECTOS -->
-  <section id="proyectos" class="projects">
-    <div class="section-header fade-up">
-      <h3>Proyectos</h3>
-    </div>
-
-    <div class="projects-grid fade-up">
-      <article class="project-card">
-        <img src="assets/images/proyecto-1.jpg" alt="Proyecto 1">
-        <span>Vivienda Unifamiliar</span>
-      </article>
-
-      <article class="project-card fade-up">
-        <img src="assets/images/proyecto-2.jpg" alt="Proyecto 2">
-        <span>Edificio Residencial</span>
-      </article>
-
-      <article class="project-card fade-up">
-        <img src="assets/images/proyecto-3.jpg" alt="Proyecto 3">
-        <span>Reforma Interior</span>
-      </article>
-    </div>
-  </section>
-  <section id="contacto" class="contact">
-  <div class="contact-inner">
-
-    <div class="contact-header">
-      <h3>Hablemos de tu proyecto</h3>
-      <p>
-        Completá el formulario y nos pondremos en contacto para
-        conocer tu idea y acompañarte en todo el proceso.
-      </p>
-    </div>
-
-    <form class="contact-form" action="https://formsubmit.co/tucorreo@ejemplo.com" method="POST">
-      
-      <!-- anti spam -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_subject" value="Nuevo contacto desde la web">
-      <input type="hidden" name="_template" value="table">
-
-      <div class="form-group">
-        <input type="text" name="nombre" placeholder="Nombre completo" required>
-      </div>
-
-      <div class="form-group">
-        <input type="email" name="email" placeholder="Email" required>
-      </div>
-
-      <div class="form-group">
-        <input type="tel" name="telefono" placeholder="Teléfono">
-      </div>
-
-      <div class="form-group">
-        <textarea name="mensaje" placeholder="Contanos sobre tu proyecto" rows="4" required></textarea>
-      </div>
-
-      <button type="submit" class="contact-btn">
-        Enviar consulta
-      </button>
-
-    </form>
-
+  <div class="hero-home-content fade-scroll">
+    <h1 class="hero-title">
+      <span class="first-name reveal-text">Santino</span>
+      <span class="last-names">
+        <span class="last-name reveal-text delay">Volponi</span>
+        <span class="last-name reveal-text delay">Rubio</span>
+      </span>
+    </h1>
   </div>
 </section>
 
 
+  <main>
+    <!-- Sobre Mi -->
+    <section class="about-intro fade-scroll" id="sobre-mi">
+
+
+      <div class="about-grid">
+
+        <div class="about-image fade-up">
+          <img src="assets/images/about-circulo.jpg" alt="Detalle de obra">
+        </div>
+
+        <div class="about-content">
+          <span class="about-eyebrow fade-up delay-1">Sobre Mi</span>
+
+          <h2 class="about-title fade-up delay-2">Diseñar para habitar mejor</h2>
+
+          <p class="fade-up delay-3">
+            Soy Santino Volponi Rubio, tengo 23 años y me desarrollo en el mundo del diseño y la arquitectura. Me apasiona crear espacios y propuestas que no solo se vean bien, sino que transmitan una idea, una identidad y una intención clara.
+          </p>
+          <p class="fade-up delay-3">
+            Trabajo con mucha atención en los detalles, porque creo que ahí es donde realmente se define la calidad de un proyecto. Me gusta escuchar a cada cliente de manera personalizada, entender qué busca, qué necesita y qué quiere sentir en el espacio que está creando.
+          </p>
+          <p class="fade-up delay-3">
+            Disfruto del proceso de diseño desde la idea inicial hasta el resultado final, buscando siempre que cada proyecto tenga carácter propio y esté pensado específicamente para quien lo va a vivir.
+          </p>
+
+          <div class="about-metric fade-up delay-4">
+            <strong>100+</strong>
+            <span>Proyectos Realizados</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="before-after" id="proyectos">
+      <div class="ba-header">
+        <span class="ba-eyebrow">Proyectos</span>
+        <h2>Intervencion en fachadas</h2>
+      </div>
+
+      <div class="ba-grid">
+
+        <!-- PROYECTO 1 -->
+        <article class="ba-card">
+          <div class="ba-wrapper">
+            <img src="assets/images/proyecto-despues-1.png" class="ba-image ba-after">
+
+            <div class="ba-before">
+              <img src="assets/images/proyecto-antes-1.png" class="ba-image">
+            </div>
+
+            <input type="range" min="0" max="100" value="50" class="ba-slider">
+            <span class="ba-divider"></span>
+          </div>
+
+          <div class="ba-info">
+
+            <p class="ba-text">
+              Intervención de fachada con enfoque en privacidad hacia el interior, lenguaje moderno, incorporación de vegetación y carpinterías contemporáneas para reforzar identidad y carácter.
+            </p>
+            <button class="ba-btn">Ver más</button>
+          </div>
+        </article>
+
+
+        <!-- PROYECTO 2 -->
+        <article class="ba-card">
+          <div class="ba-wrapper">
+            <img src="assets/images/proyecto-despues-2.png" class="ba-image ba-after">
+
+            <div class="ba-before">
+              <img src="assets/images/proyecto-antes-2.png" class="ba-image">
+            </div>
+
+            <input type="range" min="0" max="100" value="50" class="ba-slider">
+            <span class="ba-divider"></span>
+          </div>
+
+          <div class="ba-info">
+            <p class="ba-text">
+              Proyecto que prioriza la calidez a través de iluminación cálida, revestimientos en madera y vegetación, respetando la estructura original de la vivienda.
+            </p>
+            <button class="ba-btn">Ver más</button>
+          </div>
+        </article>
+
+        <!-- PROYECTO 3 -->
+        <article class="ba-card">
+          <div class="ba-wrapper">
+            <img src="assets/images/proyecto-despues-3.png" class="ba-image ba-after">
+
+            <div class="ba-before">
+              <img src="assets/images/proyecto-antes-3.png" class="ba-image">
+            </div>
+
+            <input type="range" min="0" max="100" value="50" class="ba-slider">
+            <span class="ba-divider"></span>
+          </div>
+
+          <div class="ba-info">
+            <p class="ba-text">
+              Propuesta de renovación con intervenciones simples y económicas, enfocadas en modernizar la fachada sin elevar el costo.
+            </p>
+            <button class="ba-btn">Ver más</button>
+          </div>
+        </article>
+        <!-- PROYECTO 4 -->
+        <article class="ba-card">
+          <div class="ba-wrapper">
+            <img src="assets/images/proyecto-despues-4.png" class="ba-image ba-after">
+
+            <div class="ba-before">
+              <img src="assets/images/proyecto-antes-4.png" class="ba-image">
+            </div>
+
+            <input type="range" min="0" max="100" value="50" class="ba-slider">
+            <span class="ba-divider"></span>
+          </div>
+
+          <div class="ba-info">
+            <p class="ba-text">
+              Propuesta para completar la imagen final de la vivienda con revestimientos en colores neutros y la incorporación de una terraza moderna con alero envolvente en el segundo piso.
+            </p>
+            <button class="ba-btn">Ver más</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- SERVICIOS -->
+
+    <section class="servicios" id="servicios">
+
+      <div class="servicios-left">
+        <span class="servicios-label">SERVICIOS</span>
+        <h2>Diseño</h2>
+        <p>
+          El proceso de diseño se encuentra conformado por dos etapas, 
+          cada una atiende exigencias de diferentes escalas y está compuesta 
+          por elementos particulares.
+        </p>
+      </div>
+
+      <div class="servicios-right">
+
+        <div class="servicio-item">
+          <button class="servicio-header">
+            <span>Anteproyecto de Viviendas</span>
+            <span class="servicio-icon">+</span>
+          </button>
+          <div class="servicio-content">
+            <p>
+              Desarrollo inicial de propuestas arquitectónicas para viviendas unifamiliares y multifamiliares,
+              contemplando implantación, normativa y concepto espacial.
+            </p>
+          </div>
+        </div>
+
+        <div class="servicio-item">
+          <button class="servicio-header">
+            <span>Diseño de Interiores</span>
+            <span class="servicio-icon">+</span>
+          </button>
+          <div class="servicio-content">
+            <p>
+              Diseño integral de baños, cocinas, dormitorios y remodelación de fachadas,
+              optimizando funcionalidad, estética y confort.
+            </p>
+          </div>
+        </div>
+
+        <div class="servicio-item">
+          <button class="servicio-header">
+            <span>Mejora de Proyectos</span>
+            <span class="servicio-icon">+</span>
+          </button>
+          <div class="servicio-content">
+            <p>
+              Optimización de proyectos existentes mediante ajustes de diseño,
+              distribución espacial y resolución técnica.
+            </p>
+          </div>
+        </div>
+
+        <div class="servicio-item">
+          <button class="servicio-header">
+            <span>Redibujo de Planos</span>
+            <span class="servicio-icon">+</span>
+          </button>
+          <div class="servicio-content">
+            <p>
+              Digitalización y actualización de planos para presentación profesional
+              y correcta documentación técnica.
+            </p>
+          </div>
+        </div>
+
+        <div class="servicio-item">
+          <button class="servicio-header">
+            <span>Renders Arquitectónicos</span>
+            <span class="servicio-icon">+</span>
+          </button>
+          <div class="servicio-content">
+            <p>
+              Imágenes realistas para anteproyectos, remodelaciones de fachadas
+              y mejoras de proyectos con alto impacto visual.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="testimonios">
+
+      <div class="testimonios-header">
+        <span class="testimonios-eyebrow">Testimonios</span>
+        <h2>La experiencia de nuestros clientes</h2>
+      </div>
+
+      <div class="testimonios-grid">
+
+        <!-- CARD 1 -->
+        <article class="testimonial-card">
+          <p>
+            Me guió desde la elección del barrio para comprar el lote, sabiendo
+            cuál se ajustaba a mis necesidades y posibilidades. Destaco la empatía
+            y transparencia a la hora de proyectar.
+          </p>
+
+          <div class="testimonial-author">
+            <img src="assets/images/testimonio.jpg" alt="Leonardo">
+            <div>
+              <strong>Leonardo</strong>
+              <span>Casa LS, 2022</span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- CARD 2 -->
+        <article class="testimonial-card">
+          <p>
+            Nos escuchó y observó para entender la dinámica familiar.
+            El proyecto fue dinámico, ajustándose a nuestros comentarios.
+            No hubo conflicto alguno en 10 meses de obra.
+          </p>
+
+          <div class="testimonial-author">
+            <img src="assets/images/testimonio.jpg" alt="Marina">
+            <div>
+              <strong>Marina</strong>
+              <span>Casa F1, 2024</span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- CARD 3 -->
+        <article class="testimonial-card">
+          <p>
+            No solo nos entendió proyectualmente sino que también despejó
+            todas las dudas que implica nuestro primer proyecto.
+            Nos acompañó durante toda la obra.
+          </p>
+
+          <div class="testimonial-author">
+            <img src="assets/images/testimonio.jpg" alt="Diego">
+            <div>
+              <strong>Diego</strong>
+              <span>Casa Cinta, 2023</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
 </main>
 
-<footer class="site-footer">
+<footer class="site-footer" id="contacto">
   <div class="footer-inner">
 
     <!-- BRAND -->
     <div class="footer-brand">
-      <h2>Santino Volponi</h2>
+      <h2>Contacto</h2>
       <span>Arquitectura</span>
-
-      <div class="footer-social">
-        <a href="#" aria-label="WhatsApp">WhatsApp</a>
-        <a href="#" aria-label="Instagram">Instagram</a>
-      </div>
     </div>
 
     <!-- CONTACTO -->
     <div class="footer-contact">
       <h4>Contacto</h4>
-      <p>+54 9 2914 29 6865</p>
-      <p>info@volponi.com</p>
-      <p>Bahia Blanca, Argentina</p>
+      <div class="footer-social">
+        <a href="https://wa.me/5492915376994?text=Hola,%20estoy%20interesado/a%20en%20un%20diseño%20arquitectónico.%20¿Podrías%20brindarme%20más%20información?" target="_blank" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
     </div>
 
     <!-- NAV -->
     <nav class="footer-nav">
-      <h4>Navegación</h4>
-      <a href="#estudio">Estudio</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
+      <h4>Social</h4>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/arq.volponi/" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <a href="https://www.tiktok.com/@arq_volponi" target="_blank" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+          <span>TikTok</span>
+        </a>
+      </div>
     </nav>
 
   </div>
@@ -234,9 +413,19 @@
 
 
 
+
   <script src="js/main.js"></script>
   <script src="js/before-after.js"></script>
   <script src="js/footer-reveal.js"></script>
+  <script src="js/servicios.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/testimonios.js"></script>
+    <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/5492915376994?text=Hola,%20estoy%20interesado/a%20en%20un%20diseño%20arquitectónico.%20¿Podrías%20brindarme%20más%20información?" 
+    class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
 
 </body>
 </html>
